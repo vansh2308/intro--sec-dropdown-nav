@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;300;400;700&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Epilogue', sans-serif;
+}
+body{
+  background-color: #fafafa;
+}
+nav{
+  padding: 35px;
+  color: #8d8d8d;
+  margin-bottom: 30px;
+}
+
+nav div, nav img{
+  display: inline;
+  float: left;
+}
+nav div:hover{
+  color: black;
+}
+nav div button{
+  padding: 14px;
+  border-radius: 12px;
+  border: 2px solid #8d8d8d;
+  color: #8d8d8d;
+  background-color: transparent;
+  margin-left: 30px;
+
+}
+nav div button:hover{
+  border-color: black;
+  color: black;
+}
+.dropdown-cont:hover .dropdown{
+  display: block;
+}
+.dropdown-cont{
+  display: flex;
+  flex-direction: column;
+}
+.dropdown{
+  width: fit-content;
+  display: none;
+  margin-right: 0;
+  padding: 10px 17px;
+  border-radius: 10px;
+  margin-left: -50px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.dropdown p{
+  margin: 15px 0;
+  color: #8d8d8d;
+}
+.dropdown p:hover{
+  color: black;
+}
+.dropdown p img{
+  margin-right: 10px;
+}
+.text-cont{
+  position: absolute;
+  width: 30%;
+  margin: 150px 0 0 200px;
+
+}
+.text-cont h1{
+  font-size: 60px;
+  margin-bottom: 40px;
+}
+.text-cont div{
+  font-size: 18px;
+  line-height: 25px;
+  width: 460px;
+  font-weight: 500;
+}
+.text-cont button{
+  margin-top: 40px;
+  border-radius: 15px;
+  background-color: black;
+  padding: 15px 25px;
+  color: white;
+  /* outline: none; */
+  border-color: transparent;
+  font-weight: 700;
+
+}
+.clients{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients img{
+  margin: 0 20px;
+}
+.deskimg{
+  width: 26%;
+  height: auto;
+  float: right;
+  margin-right: 17%;
+  margin-top: 2rem;
+}
+.mobile{display: none;}
+
+@media screen and (max-width: 800px) {
+  .deskimg, nav{display: none;}
+  .mobile{display: block;}
+  .text-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+  }
+  .text-cont div{
+    width: fit-content;
+  }
+  .clients{
+    max-width: 90vw;
+    margin: 40px 0;
+    display: flex;
+    padding: 0 10px;
+    
+  }
+  .clients img{
+    width: 20%;
+    margin: 15px;
+  }
+  .nav-cont{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    
+    z-index: 2;
+  }
+  .menu{
+    height: 100vh;
+    width: 70vw;
+    float: right;
+    background-color: #fafafa;
+    padding: 20px;
+    /* display: none; */
+  }
+  .menu ul div{
+    margin: 20px ;
+  }
+  .btn-cont{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dropdown{
+    box-shadow: none;
+  }
+  .btn-cont button{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+
+
+  }
+  
+}

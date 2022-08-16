@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" type="text/css" href="./mystyle.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <nav>
+    <img src = "./images/logo.svg" alt = "logo" style="margin-right: 50px;">
+
+    <div class="dropdown-cont">
+       <div style="margin-right: 40px;"><p style="float: left; display: inline;"> Features </p><img src="./images/icon-arrow-down.svg" style="margin-left: 15px; margin-top: 5px; display: inline;"> </div>
+       <div class="dropdown">
+         <p> <img src="./images/icon-todo.svg"> Todo List </p>
+         <p> <img src="./images/icon-calendar.svg"> Calendar</p>
+         <p> <img src="./images/icon-reminders.svg"> Reminders </p>
+         <p> <img src="./images/icon-planning.svg"> Planning </p>
+       </div>   
+     </div>
+
+     <div class="dropdown-cont" >
+      <div style="margin-right: 40px;"><p style="float: left; display: inline;"> Company </p><img src="./images/icon-arrow-down.svg" style="margin-left: 15px; margin-top: 5px; display: inline;"> </div>
+      <div class="dropdown" style="margin-left: 2px;">
+        <p>  History </p>
+        <p> Our Team </p>
+        <p>  Blog </p>
+      </div>   
+    </div>
+
+    <div style="margin-right: 40px;">Careers</div>
+    <div>About</div>
+    <div style="float: right; margin-top: -16px;"> <button>Register</button></div>
+    <div style="float: right;">Login</div>
+  </nav>
+
+  
+
+  <img src = "images/image-hero-desktop.png" alt = "imgdesk" class="deskimg">
+
+  <div class="mobile nav-cont" id = "menu">
+    <div class="menu">
+      <button style="background-color: transparent; float: right; border: none;" id = "close"> <img src="./images/icon-close-menu.svg"> </button>
+
+      <ul>
+
+        <div class="dropdown-cont" style="margin: 30px 0 0 0;">
+          <div><p style="float: left; display: inline; "> Features </p><img src="./images/icon-arrow-down.svg" style="margin-left: 15px; margin-top: 2px; display: inline;"> </div>
+          <div class="dropdown" style="margin: 0 0 0 40px">
+            <p> <img src="./images/icon-todo.svg"> Todo List </p>
+            <p> <img src="./images/icon-calendar.svg"> Calendar</p>
+            <p> <img src="./images/icon-reminders.svg"> Reminders </p>
+            <p> <img src="./images/icon-planning.svg"> Planning </p>
+          </div>   
+        </div>
+   
+        <div class="dropdown-cont"  style="margin: 0px 0 0 0;">
+         <div><p style="float: left; display: inline;"> Company </p><img src="./images/icon-arrow-down.svg" style="margin-left: 15px; margin-top: 5px; display: inline;"> </div>
+         <div class="dropdown" style="margin: 0 0 0 40px; padding: 0;">
+           <p>  History </p>
+           <p> Our Team </p>
+           <p>  Blog </p>
+         </div>   
+       </div>
+   
+       <div style="height: 30px;">Careers</div>
+       <div style="height: 30px;">About</div>
+
+       <div class= "btn-cont">
+         <div>Login</div>
+         <div> <button>Register</button></div>
+       </div>
+        
+      </ul>
+    </div>
+
+
+  </div>
+
+  <img src = "./images/logo.svg" class = "mobile" alt = "logo" style="float: left; margin: 20px 20px">
+  <button id = "menu-open" class="mobile" style="float: right; margin: 20px 20px; padding: 20px; margin: 0; background-color: transparent; border: none;"><img src = "./images/icon-menu.svg"></button>
+  <img src="./images/image-hero-mobile.png" class="mobile" alt="hero" style="width: 100%; height: auto; left: 50%; padding: 7%;">
+
+  <div class="text-cont">
+    <h1>Make <br> Remote Work</h1>
+
+    <div style="color: #8d8d8d"> Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</div>
+
+    <button>Learn More</button>
+    <div class="clients"> 
+      <img src="./images/client-databiz.svg">
+      <img src="./images/client-audiophile.svg">
+      <img src="./images/client-meet.svg">
+      <img src="./images/client-maker.svg">
+    </div>
+  </div>
+
+  <script src = "./index.js"></script>
+ 
+
+
+</body>
+</html>
